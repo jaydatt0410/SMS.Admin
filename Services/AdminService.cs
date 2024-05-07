@@ -31,14 +31,6 @@ namespace SMS.Admin.Services
         public bool CreateNewStudent(Student student)
         {
             return _adminRepository.CreateNewStudent(student);            
-        }
-
-        public string ValidateCreateRequest(Student student)
-        {
-            if(!string.IsNullOrEmpty(student.Name))
-            {
-                return "Name should not empty.";
-            }
-        }
+        }        
     }
 }
